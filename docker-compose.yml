@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  tie:
+    build:
+      context: .
+      args:
+        HALYARD_VERSION: 0.37.0
+        KUBECTL_VERSION: 1.13.0
+    image: devholic/tie:0.1.0
+    volumes:
+      - .halconfig:/root/.hal
+      - .workdir:/workdir
+    working_dir: /tie
+    stdin_open: true
+    tty: true
