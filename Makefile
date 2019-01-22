@@ -1,2 +1,2 @@
 shell:
-		docker-compose run --rm tie
+	docker-compose run --rm tie
