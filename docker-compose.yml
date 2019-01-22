@@ -9,7 +9,6 @@ services:
     image: devholic/tie:0.1.0
     volumes:
       - .halconfig:/root/.hal
-      - .workdir:/workdir
-    working_dir: /tie
+      - .workdir:/tie
     stdin_open: true
     tty: true
